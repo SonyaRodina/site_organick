@@ -272,7 +272,7 @@ p {
     justify-content: center;
     height: 445px;
     max-width: 1400px;
-   margin: 10px 160px;
+    margin: 10px 160px;
 }  
 
 .contact-us {
@@ -347,23 +347,21 @@ p {
 .container-shop {
     display: flex;
     flex-wrap: wrap;
-    padding: 90px 80px; 
+    padding: 90px 40px; 
 }
-
-.container-shop >{
-    margin-left: 20px;
-} 
 
 .card {
     width: 335px;
     height: 483px;
     padding: 25px 20px 30px 30px;
     margin-bottom: 40px;
+    margin-left: 20px; /*это изменение*/
+    /* margin-left: 20px; */
     display: flex;
     flex-direction: column;
     
     border-radius: 30px;
-    box-shadow: 10px 10px 60px rgba(194, 166, 212, 0.35);
+    box-shadow: 10px 10px 60px rgba(194, 166, 212, 0.35); 
 
     transition: transform 0.2s ease-in;
 }
