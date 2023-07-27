@@ -372,7 +372,8 @@ footer {
     flex-direction: column;
     
     border-radius: 30px;
-    box-shadow: 10px 10px 60px rgba(194, 166, 212, 0.35); 
+    border-style: none;
+    box-shadow: 10px 10px 60px rgba(202, 177, 218, 0.35); 
 
     transition: transform 0.2s ease-in;
 }
@@ -464,18 +465,18 @@ footer {
 }
 
 .form {
-    width: 40%; 
+    width: 45%; 
 }
 
 form {
-    color: #274C5B;
+    color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 165.4%; /* 29.772px */
 }
 
-button {
+.btn-primary {
     display: inline-block;
     border-radius: 8px;
     background-color:#274C5B;
@@ -488,6 +489,14 @@ button {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 500;
+} 
+
+#emailHelp {
+    color: #ffffff;
+}
+
+.form-control {
+    width: 500px;
 }
 /* 
 @media (max-width: 600px;) {
