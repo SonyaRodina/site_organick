@@ -1,0 +1,141 @@
+/* TESTIMONIAL */
+.testimonial {
+    width: 100%;
+    background-image: url(./img/banner_testimonial.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0 70px 0;
+}
+
+.container-testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    height: 600px;
+}
+
+.font-title {
+    margin-bottom: 8px;
+
+    color: #7EB693;
+    font-family: 'Yellowtail', cursive ;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.container-testimonial h1 {
+    margin-bottom: 60px;
+}
+
+.customer > img {
+    margin-bottom: 20px;
+}
+
+.container-testimonial h2{
+    margin: 0;
+}
+
+.container-testimonial p~p{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.container-testimonial :last-child {
+    margin: 0;
+    font-size: 15px;
+}
+
+.customer {
+    display: flex;
+    flex-direction: column;
+}
+
+.counters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.counters > * + *{
+    margin-left: 50px;
+}
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 211px;
+    height: 211px;
+    background-image: url(./img/chart.svg);
+    background-size: cover;
+    text-align: center;
+}
+
+.chart h1, p{
+    margin: 0;
+}
+
+
+/* GALLERY */
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 187px 0;
+    background-color: #F1F8F4;
+}
+
+.gallery-card {
+    width: 612px;
+    height: 583px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 {
+    background-image: url(./img/gallery_organic_juice.png);
+    background-size: cover;
+}
+
+.card2 {
+    background-image: url(./img/gallery_organic_food.png);
+    background-size: cover;
+}
+
+.card3 {
+    background-image: url(./img/gallery_nuts_cookis.png);
+    background-size: cover;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 16px;
+    background-color:#ffffff;
+    padding-left: 83px;
+    padding-right: 83px;
+    line-height: 80px; /*(высота строки) центрирует текст в кнопке*/
+    text-decoration: none;
+
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #7EB693;
+}
+
+.blur {
+    filter: blur(2px);
+}
+

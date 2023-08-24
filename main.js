@@ -29,3 +29,11 @@ prevButton.onclick = function () {
   cards[cardIndex].classList.add("show");
 };
 
+// GALLERY CARD EFFECT
+const button = document.querySelector(".btn");
+const card = document.querySelector(".gallery");
+
+button.mouseout = function () {
+  card.classList.add('blur');
+  console.log(button);
+}

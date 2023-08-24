@@ -1,0 +1,85 @@
+/* SHOP*/
+.container-shop {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 90px 40px; 
+    justify-content: center;
+}
+
+.card {
+    width: 335px;
+    height: 483px;
+    padding: 25px 20px 30px 30px;
+    margin-bottom: 40px;
+    margin-left: 20px; 
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 30px;
+    border-style: none;
+    box-shadow: 10px 10px 60px rgba(202, 177, 218, 0.35); 
+
+    transition: transform 0.2s ease-in;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.button-card {
+    display: inline-block;
+    border-radius: 8px;
+    background-color:#274C5B;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 32px; 
+    text-decoration: none;
+
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.button-card:hover {
+    background-color: #7EB693;
+    cursor: pointer;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: end;
+    width: 280px;
+    height: 40px;
+    
+    border-width: 2px 0px 0px 0px;
+    border-color: #ded5d5;
+    border-style: dashed;
+}
+
+.price {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 115px;
+}
+
+.price :nth-child(2N+1) {
+    margin: 0;
+    color: #B8B8B8;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+.price p+p {
+    margin: 0;
+
+    color: #274C5B;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight:700;
+}

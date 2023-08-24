@@ -1,0 +1,77 @@
+/* TEAM */
+.container-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 850px;
+    height: 1250px;
+    padding-top: 177px;
+
+    text-align: center;
+
+    position: relative;
+}
+
+.card-expert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 615px;
+
+    text-align: left;
+    border-radius: 30px;
+    border-style: none;
+    box-shadow: 10px 10px 60px rgba(202, 177, 218, 0.35); 
+}
+
+.about-expert {
+    width: 390px;
+    margin: 35px 28px;
+}
+
+.profession {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profession p {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.about-expert h2 {
+    margin: 0;
+}
+
+.social img {
+    margin-left: 17px;
+}
+
+.slider {
+    opacity: 0;
+    position: absolute;
+    top: 420px;
+}
+
+.show {
+    opacity: 1;
+}
+
+.button-prev  {
+    position: absolute;
+    width: 30px;
+    left: 0px;
+    top: 650px;
+    cursor: pointer;
+}
+
+.button-next {
+    position: absolute;
+    width: 30px;
+    top: 650px;
+    right: 0px;
+    cursor: pointer;
+}
