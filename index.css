@@ -84,16 +84,24 @@
 /* GALLERY */
 .gallery {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding: 187px 0;
     background-color: #F1F8F4;
 }
 
+.container-gallery {
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery :nth-child(n+2){
+    margin-left: 8px;
+}
+
 .gallery-card {
-    width: 612px;
-    height: 583px;
+    width: 500px;
+    height: 476px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,4 +146,7 @@
 .blur {
     filter: blur(2px);
 }
+
+
+
 

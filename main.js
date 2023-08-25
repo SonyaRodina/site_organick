@@ -9,7 +9,7 @@ nextButton.onclick = function () {
   cards[cardIndex].classList.remove("show");
 
   if (cardIndex >= cards.length -1) {
-    cardIndex = 0; 
+    cardIndex = 0;
   } else {
     cardIndex = cardIndex + 1;
   }
@@ -25,15 +25,22 @@ prevButton.onclick = function () {
   } else {
     cardIndex = cardIndex - 1;
   }
-  
+
   cards[cardIndex].classList.add("show");
 };
 
 // GALLERY CARD EFFECT
-const button = document.querySelector(".btn");
+const button = document.querySelector(".button");
 const card = document.querySelector(".gallery");
 
-button.mouseout = function () {
-  card.classList.add('blur');
+console.log("button", button);
+button.addEventListener("mouseover", () => {
   console.log(button);
-}
+  card.classList.add("blur");
+});
+
+button.addEventListener("mouseout", () => {
+  console.log(button);
+  card.classList.remove("blur");
+});
+

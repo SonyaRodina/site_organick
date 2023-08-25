@@ -4,19 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script defer src="../main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="./team.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="link rel="preconnect href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&family=Roboto:wght@500;700;900&family=Yellowtail&display=swap" rel="stylesheet"> 
 </head>
 <body>
-      <!--TEAM-->
+
+    <!--HEADER-->
+     <header class="header">
+        <div class="container-header">
+            <div>
+                <a href="../index.html" class="">
+                    <img src="../img/icons/logo.svg" alt="logotype">
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="../about/about.html" class="nav-link">About</a>
+                <a href="#" class="nav-link">Pages</a>
+                <a href="../shop/shop.html" class="nav-link">Shop</a>
+                <a href="#" class="nav-link">Projects</a>
+                <a href="./team.html" class="nav-link">Team</a>
+                <a href="#" class="nav-link">Contacts</a>
+            </nav>
+            <div class="search">
+                <img src="../img/icons/search.svg" alt="search">
+                <div class="cart"> 
+                    <img src="../img/icons/cart.svg" alt="">Cart (0)
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main>
+    <!--TEAM-->
+      <div class="main-banner"> <img src="../img/banner_6.png" alt="banner"></div>
       <section class="container-team">
         <img class="button-prev prev" src="../img/icons/arrow_prev.png"  alt="arrow">
         <img class="button-next next" src="../img/icons/arrow_next.png" alt="arrow">
-    <p class="font-title">Team</p>
-    <h1>Our Organic Experts</h1>
-    <p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's 
-        <br> standard dummy text ever since the 1500s, when an unknown printer took a galley.
-    </p>
+        <p class="font-title">Team</p>
+        <h1>Our Organic Experts</h1>
+        <p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's 
+            <br> standard dummy text ever since the 1500s, when an unknown printer took a galley.
+        </p>
         <div class="card-expert slider show">
-            <img src="./img/team_1.jpg" alt="expert">
+            <img src="../img/team_1.jpg" alt="expert">
             <div class="about-expert">
                 <h2>Giovani Bacardo</h2>
                 <div class="profession">
@@ -56,6 +95,112 @@
                 </div>
             </div>
         </div>
-</section>
+        <div class="card-expert slider">
+            <img src="../img/team_4.png" alt="expert">
+            <div class="about-expert">
+                <h2>Scott Lawrence</h2>
+                <div class="profession">
+                    <p class="font-title">Designer</p>
+                    <div class="social">
+                        <img src="../img/icons/insta_team.svg" alt="instagram">
+                        <img src="../img/icons/facebook_team.svg" alt="facebook">
+                        <img src="../img/icons/twitter_team.svg" alt="twitter">
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="card-expert slider">
+            <img src="../img/team_5.png" alt="expert">
+            <div class="about-expert">
+                <h2>Keira Knightley</h2>
+                <div class="profession">
+                    <p class="font-title">Farmer</p>
+                    <div class="social">
+                        <img src="../img/icons/facebook_team.svg" alt="facebook">
+                        <img src="../img/icons/twitter_team.svg" alt="twitter">
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="card-expert slider">
+            <img src="../img/team_6.png" alt="expert">
+            <div class="about-expert">
+                <h2>Karen Allen</h2>
+                <div class="profession">
+                    <p class="font-title">Farmer</p>
+                    <div class="social">
+                        <img src="../img/icons/insta_team.svg" alt="instagram">
+                        <img src="../img/icons/facebook_team.svg" alt="facebook">
+                        <img src="../img/icons/twitter_team.svg" alt="twitter">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FORM--BOOTSTRAP--> 
+    <section class="form-section">
+        <div class="banner_background_for_form">
+            <div class="form">
+                <form>
+                <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <din class="container-footer">
+            <div class="contact-us">
+                <h2>Contact Us</h2>
+                   <div class="email">
+                        <p>Email</p>
+                        <p style="word-break: break-all;">needhelp@Organia.com</p>
+                        <p>Phone</p>
+                        <p>666 888 888</p>
+                        <p>Adress</p>
+                        <p>88 road, borklyn street, USA</p>
+                    </div>
+            </div>
+            <div class="info">
+                <div><img src="../img/icons/logo.svg" alt="logotype"></div>  <!--без div картинка растягивается по всей ширине блока-->
+                <p>Simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum simply dummy text of the printing </p>
+                <div class="icons-footer">
+                    <a href="#"><img src="../img/icons/insta.svg" alt="instagram"></a>
+                    <a href="#"><img src="../img/icons/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="../img/icons/twitter.svg" alt="twitter"></a>
+                    <a href="#"><img src="../img/icons/pinterest.svg" alt="pinterest"></a>
+                </div>    
+            </div>
+            <div class="utility-pages">
+                <h2>Utility-Pages</h2>
+                <p>Style Guide</p>
+                <p>404 Not Found</p>
+                <p>Password Protected</p>
+                <p>Licences</p>
+                <p>Changelog</p>
+            </div>
+        </din>
+        <div class="footer-bottom">
+            <div class="Copyright">
+                <p>Copyright © Organick | Designed by VictorFlow Templates - Powered by Webflow</p>
+            </div>     
+        </div>
+    </footer>   
 </body>
 </html>

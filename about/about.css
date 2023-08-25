@@ -1,4 +1,7 @@
 /*ABOUT US*/
+p {
+    margin-bottom: 48px;
+}
 .main-banner img {    
     width: 100%;   
 }
