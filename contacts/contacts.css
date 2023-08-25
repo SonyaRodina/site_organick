@@ -2,7 +2,7 @@
 .container-contacts {
     display: flex;  
     max-width: 1540px;
-    margin: 150px 100px;
+    margin: 200px 100px;
 }
 
 h1 ~ p {
@@ -39,4 +39,71 @@ h1 ~ p {
 
 .massege div, .contacts-us div {
     margin-left: 20px;
+}
+
+
+/* FEEDBACK FORM */
+.contact-section {
+    background-color: #F1F8F4;
+    transition: 1s;
+    padding: 100px 150px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #274C5B;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    text-transform: capitalize;
+    color: #274C5B;
+    padding: 5px 10px;
+}
+
+::placeholder {
+    color: #274C5B;
+}
+
+#msg {
+    height: 280px;
+    resize: none;
+    font-family: sans-serif;
+}
+
+.form-submit-btn {
+    background: #274C5B;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 15px 40px;
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.form-submit-btn:hover {
+    color: #274C5B;
+    background-color: #EFD372;
+    transition: background-color 0.2s;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid #274C5B;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }

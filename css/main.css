@@ -103,7 +103,7 @@ form {
 
 .btn-primary {
     display: inline-block;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color:#274C5B;
     padding-left: 15px;
     padding-right: 15px;
@@ -115,6 +115,13 @@ form {
     font-size: 15px;
     font-weight: 500;
 } 
+
+.btn-primary:hover {
+    color: #274C5B;
+    background-color: #EFD372;
+    transition: background-color 0.2s;
+    border: none;
+}
 
 #emailHelp {
     color: #ffffff;
