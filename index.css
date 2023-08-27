@@ -1,4 +1,8 @@
 /* TESTIMONIAL */
+.main-banner {
+    position: relative;
+}
+
 .testimonial {
     width: 100%;
     background-image: url(./img/banner_testimonial.png);
@@ -7,7 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px 0 70px 0;
+    padding: 120px 0 50px 0;
 }
 
 .container-testimonial {
@@ -58,11 +62,11 @@
 .counters {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.counters > * + *{
-    margin-left: 50px;
+.counters > div{
+    margin: 0px 30px 20px 20px;
 }
 
 .chart {
@@ -141,12 +145,69 @@
 
 .button:hover {
     background-color: #7EB693;
+    color: #ffffff;
 }
 
 .blur {
     filter: blur(2px);
 }
 
+/* OFFERS */
+.container-offers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1460px;
+    margin: 154px 20px;
+}
 
+.screen {
+    width: 683px;
+    height: 367px;
+    perspective: 3000px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
 
+.cardss {
+   width: 100%;
+   height: 100%;
+   transform-style: preserve-3d;
+   transition: transform 2s;
+}
 
+.offer1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.offer2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.front1 {
+    background-image: url(./img/card_offer1.png);
+}
+
+.front2 {
+    background-image: url(./img/card_offer2.png);
+}
+
+.back1 {
+    background-image: url(./img/card_offer_back1.png);
+    transform: rotateY(180deg);
+} 
+
+.back2 {
+    background-image: url(./img/card_offer_back2.png);
+    transform: rotateY(180deg);
+} 
+
+ .cardss:hover {
+    transform: rotateY(180deg);
+}
