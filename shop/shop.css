@@ -1,3 +1,62 @@
+.logo-nav {
+    width: 730px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.form-site-search {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    }
+
+.form-site-search input{
+    height: 55px;
+    padding:4px 20px;
+    border:0;
+    border-radius: 36px;
+    font-size:16px;
+    outline-color: #c1c4b9;
+    color: #274C5B;
+    width: 82%;
+    background-color: #f5efef;
+    }
+
+@keyframes animationText {
+        from {
+           color: rgb(255, 253, 127);   
+         }
+       50% {
+        color: rgb(255, 55, 0);
+       }
+       to {
+        color: chocolate;
+       }
+    }
+
+@keyframes animationCard {
+        from {
+           box-shadow: 10px 10px 50px rgb(255, 253, 127);   
+         }
+       50% {
+        box-shadow: 10px 10px 50px rgb(216, 105, 75);
+       }
+       to {
+        box-shadow: 10px 10px 50px rgb(237, 202, 66);
+       }
+    }
+    
+    
 /* SHOP*/
 .container-shop {
     display: flex;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
+    <script defer src="./shop.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
@@ -17,20 +18,27 @@
     <!--HEADER-->
     <header class="header">
         <div class="container-header">
-            <div>
-                <a href="../index.html" class="">
-                    <img src="../img/icons/logo.svg" alt="logotype">
-                </a>
+            <div class="logo-nav">
+                <div>
+                    <a href="../index.html" class="">
+                        <img src="../img/icons/logo.svg" alt="logotype">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../about/about.html" class="nav-link">About</a>
+                    <a href="./shop.html" class="nav-link">Shop</a>
+                    <a href="../team/team.html" class="nav-link">Team</a>
+                    <a href="../contacts/contacts.html" class="nav-link">Contacts</a>
+                </nav>
             </div>
-            <nav class="nav">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="../about/about.html" class="nav-link">About</a>
-                <a href="./shop.html" class="nav-link">Shop</a>
-                <a href="../team/team.html" class="nav-link">Team</a>
-                <a href="../contacts/contacts.html" class="nav-link">Contacts</a>
-            </nav>
             <div class="search">
-                <img src="../img/icons/search.svg" alt="search">
+                <form class="form-site-search"> 
+                    <input type="text" name="text" class="inputText " placeholder="">
+                    <a href="#shop" class="header-button">
+                    <img src="../img/icons/search.svg" alt="search" class="submitForm">
+                    </a>
+                  </form>
                 <div class="cart"> 
                     <img src="../img/icons/cart.svg" alt="">Cart (0)
                 </div>
@@ -42,11 +50,11 @@
      <main>
      <!--SHOP-->    
         <div class="main-banner"> <img src="../img/banner2.png" alt="banner"></div>
-        <section class="container-shop">
+        <section class="container-shop" id="shop">
             <div class="card">
                 <div><div class="button-card">Vegetable</div></div>
                 <img src="../img/shop/broccoli.png" alt="broccoli">
-                    <h3>Calabrese Broccoli</h3>
+                    <h3 class="searchh3">Calabrese Broccoli</h3>
                 <div class="data">
                     <div class="price">
                         <p>$20.00</p> <p>$13.00</p>
@@ -63,7 +71,7 @@
             <div class="card">
                 <div><div class="button-card">Fresh</div></div>
                 <img src="../img/shop/banana.png" alt="broccoli">
-                    <h3>Fresh Banana Fruites</h3>
+                    <h3 class="searchh3">Fresh Banana Fruites</h3>
                 <div class="data">
                     <div class="price">
                         <p>$20.00</p> <p>$14.00</p>
@@ -80,7 +88,7 @@
             <div class="card">
                 <div><div class="button-card">Millets</div></div>
                 <img src="../img/shop/nuts.png" alt="broccoli">
-                    <h3>White Nuts</h3>
+                    <h3 class="searchh3">White Nuts</h3>
                 <div class="data">
                     <div class="price">
                         <p>$20.00</p> <p>$15.00</p>
@@ -97,7 +105,7 @@
             <div class="card">
                 <div><div class="button-card">Vegetable</div></div>
                 <img src="../img/shop/tomato.png" alt="broccoli">
-                    <h3>Vegan Red Tomato</h3>
+                    <h3 class="searchh3">Vegan Red Tomato</h3>
                 <div class="data">
                     <div class="price">
                         <p>$20.00</p> <p>$17.00</p>
@@ -114,7 +122,7 @@
             <div class="card">
                 <div><div class="button-card">Health</div></div>
                 <img src="../img/shop/mung_bean.png" alt="broccoli">
-                    <h3>Mung Bean</h3>
+                    <h3 class="searchh3">Mung Bean</h3>
                 <div class="data">
                     <div class="price">
                         <p>$20.00</p> <p>$11.00</p>
@@ -131,7 +139,7 @@
             <div class="card">
                 <div><div class="button-card">Nuts</div></div>
                 <img src="../img/shop/hazelnut.png" alt="broccoli">
-                    <h3>Brown Hazelnut</h3>
+                    <h3 class="searchh3">Brown Hazelnut</h3>
                 <div class="data">
                     <div class="price">
                         <p>$20.00</p> <p>$12.00</p>
@@ -148,7 +156,7 @@
             <div class="card">
                 <div><div class="button-card">Fresh</div></div>
                 <img src="../img/shop/eggs.png" alt="broccoli">
-                    <h3>Eggs</h3>
+                    <h3 class="searchh3">Eggs</h3>
                 <div class="data">
                     <div class="price">
                         <p>$20.00</p> <p>$17.00</p>
@@ -165,7 +173,7 @@
             <div class="card">
                 <div><div class="button-card">Fresh</div></div>
                 <img src="../img/shop/bread.png" alt="broccoli">
-                    <h3>Zelco Suji Elaichi Rusk</h3>
+                    <h3 class="searchh3">Zelco Suji Elaichi Rusk</h3>
                 <div class="data">
                     <div class="price">
                         <p>$20.00</p> <p>$15.00</p>
@@ -182,7 +190,7 @@
             <div class="card">
                 <div><div class="button-card">Healts</div></div>
                 <img src="../img/shop/vegetable_marrow.png" alt="broccoli">
-                    <h3>Vegetable Marrow</h3>
+                    <h3 class="searchh3">Vegetable Marrow</h3>
                 <div class="data">
                     <div class="price">
                         <p>$20.00</p> <p>$11.00</p>
@@ -199,7 +207,7 @@
             <div class="card">
                 <div><div class="button-card">Nuts</div></div>
                 <img src="../img/shop/cashew.png" alt="broccoli">
-                    <h3>Cashewcashew</h3>
+                    <h3 class="searchh3">Cashewcashew</h3>
                 <div class="data">
                     <div class="price">
                         <p>$20.00</p> <p>$12.00</p>
@@ -216,7 +224,7 @@
             <div class="card">
                 <div><div class="button-card">Fresh</div></div>
                 <img src="../img/shop/corn.png" alt="broccoli">
-                    <h3>Corn</h3>
+                    <h3 class="searchh3">Corn</h3>
                 <div class="data">
                     <div class="price">
                         <p>$20.00</p> <p>$17.00</p>
@@ -233,7 +241,7 @@
             <div class="card">
                 <div><div class="button-card">Fresh</div></div>
                 <img src="../img/shop/almonds.png" alt="broccoli">
-                    <h3>Organic Almonds</h3>
+                    <h3 class="searchh3">Organic Almonds</h3>
                 <div class="data">
                     <div class="price">
                         <p>$20.00</p> <p>$15.00</p>
