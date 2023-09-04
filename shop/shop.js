@@ -1,6 +1,6 @@
 let inputText = document.querySelector('.inputText');
 let submitForm = document.querySelector('.submitForm');
-let information = document.querySelectorAll('.searchh3');
+let information = document.querySelectorAll('.search-element');
 
 const searchFunction=(text)=> {
         information.forEach((element)=> {

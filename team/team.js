@@ -29,18 +29,3 @@ prevButton.onclick = function () {
   cards[cardIndex].classList.add("show");
 };
 
-// GALLERY CARD EFFECT
-const button = document.querySelector(".button");
-const card = document.querySelector(".gallery");
-
-console.log("button", button);
-button.addEventListener("mouseover", () => {
-  console.log(button);
-  card.classList.add("blur");
-});
-
-button.addEventListener("mouseout", () => {
-  console.log(button);
-  card.classList.remove("blur");
-});
-
